@@ -1,24 +1,22 @@
-# Avengers & Doctor Doom
+# Avengers: Age of Doom
 
-A Minecraft Java Edition mod for **Minecraft 1.20.1** on **Minecraft Forge 47.x**.
+An expandable Minecraft Java Edition mod targeting **Minecraft 1.20.1**, **Minecraft Forge 47.3.0**, and **Java 17**.
 
-## Project status
+## Current foundation
+- Forge mod entry point
+- Deferred item registry
+- Prototype Hero Database item
+- Gradle build configuration
 
-This repository contains the initial playable foundation:
-- Forge mod entry point and item registration
-- Four prototype ability items with server-side effects
-- Creative-mode item tab integration
-- Gradle build configuration and GitHub Actions build workflow
-
-The project is designed to grow into a roster of heroes and villains with dedicated models, animations, suits, weapons, abilities, bosses and dimensions. Character models and advanced abilities will be added incrementally; they are not claimed to be complete in this starter version.
+This is the first project foundation, not a finished character mod. The next milestones will add the shared character/entity framework, then individual heroes and villains, abilities, equipment, models, textures, animations, bosses and world content in tested increments.
 
 ## Requirements
-
-- Java 17
+- Java 17 JDK
 - Minecraft 1.20.1
-- Minecraft Forge 47.2.0 or compatible Forge 47.x build
+- Minecraft Forge 47.3.0 (Forge 47.x)
 
 ## Build
+Open the repository as a Gradle project in IntelliJ IDEA or Eclipse, then run:
 
 ```bash
 ./gradlew build
@@ -30,17 +28,10 @@ On Windows:
 gradlew.bat build
 ```
 
-The mod JAR is generated in `build/libs/`.
+The mod JAR will be generated in `build/libs/`.
 
-## First prototype items
+## Run development client
+Run the Gradle task `runClient` after Gradle has imported the project.
 
-- Arc Reactor: temporary strength and resistance
-- Doom Core: temporary fire resistance and strength
-- Mjolnir Token: temporary strength and jump boost
-- Web Shooter: temporary speed and jump boost
-
-These are initial gameplay placeholders. Custom 3D character models, textures, animations and deeper ability systems are planned for subsequent milestones.
-
-## License
-
-All original source code in this repository is provided under the MIT License. Marvel characters, names and related trademarks belong to their respective owners. This is an unofficial fan project and is not affiliated with or endorsed by Marvel.
+## Fan-project notice
+This is an unofficial fan project and is not affiliated with, endorsed by, or sponsored by Marvel. Marvel characters, names and related trademarks belong to their respective owners. Original code and assets will be documented separately as the project grows.
