@@ -1,5 +1,6 @@
 package com.kamoldesign.avengersdomsday;
 
+import com.kamoldesign.avengersdomsday.registry.ModCreativeTabs;
 import com.kamoldesign.avengersdomsday.registry.ModItems;
 import net.minecraftforge.fml.common.Mod;
 
@@ -9,5 +10,6 @@ public class AvengersDoomsday {
 
     public AvengersDoomsday() {
         ModItems.register();
+        ModCreativeTabs.register();
     }
 }
